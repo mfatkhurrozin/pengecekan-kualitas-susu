@@ -13,12 +13,12 @@ import time
 # import the data
 data = pd.read_csv("milknewfix.csv")
 image = Image.open("susu.jpg")
-st.title("Selamat datang di Pengecekan Kulaitas Susu")
+st.title("Selamat datang di Aplikasi Pengecekan Kualitas Susu")
 st.image(image, use_column_width=True)
 
 # checking the data
-st.write("Aplikasi ini bertujuan unutukMengecek Kualitas Susu")
-check_data = st.checkbox("Lihat contoh data")
+st.write("Aplikasi ini bertujuan unutuk membantu Mengecek Kualitas Susu")
+check_data = st.checkbox("Lihat contoh Data")
 if check_data:
     st.write(data[1:10])
 st.write("Sekarang masukan data parameter untuk melihat hasil pengecekan")
